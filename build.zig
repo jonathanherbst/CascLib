@@ -51,7 +51,7 @@ pub fn build(b: *std.Build) void {
         "src/zlib/inffast.c",
         "src/zlib/inflate.c",
         "src/zlib/inftrees.c",
-    }, .flags = &.{ "-DCASCLIB_NO_AUTO_LINK_LIBRARY", "-DCASCLIB_NODEBUG" } });
+    }, .flags = &.{ "-DCASCLIB_NO_AUTO_LINK_LIBRARY", "-DCASCLIB_NODEBUG", "-fno-sanitize=all" } });
     casclib.installHeader(b.path("src/CascLib.h"), "CascLib.h");
     casclib.installHeader(b.path("src/CascPort.h"), "CascPort.h");
     casclib.linkLibC();
