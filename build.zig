@@ -42,6 +42,7 @@ pub fn build(b: *std.Build) void {
         "src/CascRootFile_Text.cpp",
         "src/CascRootFile_TVFS.cpp",
         "src/CascRootFile_WoW.cpp",
+        "src/jenkins/lookup3.c",
         "src/zlib/adler32.c",
         "src/zlib/crc32.c",
         "src/zlib/deflate.c",
