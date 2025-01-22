@@ -45,3 +45,7 @@
 
 # Intermediate directory
 /casc.dir/
+
+#zig
+zig-out
+.zig-cache
