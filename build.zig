@@ -4,11 +4,10 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const casclib = b.addStaticLibrary(.{
-        .name = "casc",
+    const casclib = b.addLibrary(.{ .name = "casc", .linkage = .static, .root_module = b.createModule(.{
         .target = target,
         .optimize = optimize,
-    });
+    }) });
     casclib.addIncludePath(b.path("src"));
     casclib.addIncludePath(b.path("src/zlib/"));
     casclib.addCSourceFiles(.{ .files = &.{

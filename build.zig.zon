@@ -1,1 +1,1 @@
-.{ .name = "casclib", .version = "3.0.0", .paths = .{ "LICENSE", "README.md", "src", "build.zig", "build.zig.zon" } }
+.{ .name = .casclib, .fingerprint = 0x253575d52c99f643, .version = "3.0.0", .paths = .{ "LICENSE", "README.md", "src", "build.zig", "build.zig.zon" } }
