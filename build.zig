@@ -54,6 +54,7 @@ pub fn build(b: *std.Build) void {
     casclib.installHeader(b.path("src/CascLib.h"), "CascLib.h");
     casclib.installHeader(b.path("src/CascPort.h"), "CascPort.h");
     casclib.linkLibC();
+    casclib.linkLibCpp();
 
     b.installArtifact(casclib);
 }
